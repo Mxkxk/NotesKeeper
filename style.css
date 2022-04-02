@@ -1,0 +1,7 @@
+QWidget { background-color:#999900; }
+QLabel { font-size:20px; background-color:#999900; color:#663300; border:none; }
+QPushButton { font-size:20px; background-color:#BBBB00; color:#663300; border:none; }
+QLineEdit { font-size:20px; background-color:#BBBB00; color:#663300; border:none; }
+QTextEdit { font-size:20px; background-color:#BBBB00; color:#663300; border:none; }
+QMenuBar { font-size:20px; background-color:#BBBB00; color:#663300; border:none; }
+QListWidget { font-size:20px; background-color:#CCCC00; color:#663300; border:none; }

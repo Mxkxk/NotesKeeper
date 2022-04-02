@@ -1,0 +1,22 @@
+def clean_layout(self, layout = None):
+    if self.layout() != None and layout == None:
+        for i in range(self.layout().count()):
+            if self.layout().itemAt(i).widget() == None:
+                self.clean_layout(self.layout().itemAt(i))
+        print("-"*10)
+        for i in range(self.layout().count()):
+            print(self.layout().itemAt(i))
+            try:
+                self.layout().itemAt(i).widget().setParent(None)
+            except:
+                pass
+        self.setLayout(None)
+        for i in range(self.layout().count()):
+            self.layout().itemAt(i)
+    if layout != None:
+        for i in range(layout.count()):
+            if layout.itemAt(0).widget() == None:
+                self.clean_layout(layout.itemAt(i))
+            else:
+                print(layout.itemAt(0).widget())
+                layout.itemAt(0).widget().setParent(None)
