@@ -152,11 +152,19 @@ class NotesKeeper(QWidget):
 
     @Slot()
     def delete(self):
-        self.note_db.delete(self.name)
-        self.setName.setText("")
-        self.setCategory.setText("")
-        self.textEdit.setText("")
-        print("Deleted")
+        msgBox = QMessageBox()
+        msgBox.setStyleSheet(self.__style__)
+        msgBox.setWindowTitle(" ")
+        msgBox.setText("Do you want to delete your note?")
+        msgBox.setStandardButtons(QMessageBox.Yes | QMessageBox.No);
+        msgBox.setDefaultButton(QMessageBox.Save)
+        ret = msgBox.exec()
+        if ret == QMessageBox.Yes:
+            self.note_db.delete(self.name)
+            self.setName.setText("")
+            self.setCategory.setText("")
+            self.textEdit.setText("")
+            print("Deleted")
 
     @Slot()
     def about(self):
