@@ -3,7 +3,8 @@ import sys
 
 from PySide2.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout
 from PySide2.QtWidgets import QTextEdit, QLineEdit, QPushButton, QMessageBox
-from PySide2.QtCore import QFile, QIODevice, Slot, QObject
+from PySide2.QtCore import QFile, QIODevice, Slot
+from PySide2.QtGui import QIcon
 from Menu import Open, About
 from NoteDB import NoteDB
 
@@ -18,6 +19,7 @@ class NotesKeeper(QWidget):
             styleFile.close()
             self.__style__ = str(self.__style__).replace("\\r\\n", '').replace("\'", '')[1::]
             self.setStyleSheet(self.__style__)
+        self.setWindowIcon(QIcon("nk_ico.png"))
 
         self.generate_note_ui()
         self.generate_base_form_ui()
@@ -109,12 +111,16 @@ class NotesKeeper(QWidget):
 
     @Slot()
     def get_note_from_base_form(self):
+        #print("Count " + str(self.base_form.base_list.count()))
         if self.base_form.base_list.count() > 0 and self.base_form.base_list.currentRow() == -1:
             self.warning("WARNING!", "You haven`t choose note(")
         else:
-            self.set_note_ui(self.base_form.base_list.item(self.base_form.base_list.currentRow()).text())
-        print("Rows " + str(self.base_form.base_list.currentRow()))
-        print("get_note_from_base_form")
+            try:
+                self.set_note_ui(self.base_form.base_list.item(self.base_form.base_list.currentRow()).text())
+            except:
+                self.set_note_ui()
+        #print("Rows " + str(self.base_form.base_list.currentRow()))
+        #print("get_note_from_base_form")
 
     @Slot()
     def open_base_form(self):
