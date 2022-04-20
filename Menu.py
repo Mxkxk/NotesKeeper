@@ -1,6 +1,7 @@
 # This Python file uses the following encoding: utf-8
 from PySide2.QtGui import QIcon
-from PySide2.QtWidgets import QWidget, QVBoxLayout, QPushButton, QListWidget
+from PySide2.QtWidgets import QWidget, QVBoxLayout, QPushButton, QListWidget, QGridLayout, QLabel, QSizePolicy
+from PySide2.QtCore import Qt
 
 class Open(QWidget):
     def __init__(self):
@@ -42,8 +43,24 @@ class About(QWidget):
         super(About, self).__init__()
         self.setWindowTitle("NoteKeeper - About")
         self.setWindowIcon(QIcon("nk_ico.png"))
-        self.resize(800, 600)
-        self.setMinimumSize(400, 300)
+        self.setMaximumSize(800, 450)
+        self.setMinimumSize(800, 450)
+        gl = QGridLayout()
+
+        labelAbout = QLabel("NoteKeeper")
+        descr = QLabel("NoteKeeper - is modern way to keep and edit your own notes. Use it as u want///")
+        descr.setWordWrap(True)
+        date = QLabel('2022, Maksym Fedoriak\nmaksim.fedoryak@gmail.com\nTg:@mox_em')
+
+        wid = QWidget()
+        wid.setStyleSheet("background: url(nk.png);background-repeat:no-repeat;");
+
+        gl.addWidget(wid, 0, 0, 5, 3)
+        gl.addWidget(labelAbout, 0, 2)
+        gl.addWidget(descr, 1, 2, 3, 1, Qt.AlignTop)
+        gl.addWidget(date, 4, 2)
+
+        self.setLayout(gl)
 
     def set_style(self, style):
         if style is not None:
