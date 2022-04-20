@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.15.0, 2022-03-30T01:35:32. -->
+<!-- Written by QtCreator 4.15.0, 2022-04-14T15:25:31. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -328,6 +328,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/QTProjects/NotesKeeper/clipboard.txt</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/QTProjects/NotesKeeper/clipboard.txt</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/QTProjects/NotesKeeper/clipboard.txt</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{fae12559-d7e9-423b-b5fc-650b0269afca}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\QTProjects\NotesKeeper\clipboard.txt</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -402,6 +403,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/QTProjects/NotesKeeper/Menu.py</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/QTProjects/NotesKeeper/Menu.py</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/QTProjects/NotesKeeper/Menu.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{9ecdcaa0-69f0-4c00-94b9-0fd44838fbd7}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\QTProjects\NotesKeeper\Menu.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -476,6 +478,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/QTProjects/NotesKeeper/NoteDB.py</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/QTProjects/NotesKeeper/NoteDB.py</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/QTProjects/NotesKeeper/NoteDB.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{f27eca66-b28a-4aaf-a59e-d96a13690748}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\QTProjects\NotesKeeper\NoteDB.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -550,6 +553,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/QTProjects/NotesKeeper/note.db</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/QTProjects/NotesKeeper/note.db</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/QTProjects/NotesKeeper/note.db</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{5914d807-3744-4398-b17e-2531fe0bad25}</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\QTProjects\NotesKeeper\note.db</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
