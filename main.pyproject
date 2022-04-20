@@ -1,3 +1,3 @@
 {
-    "files": ["style.css","clipboard.txt","main.py","Menu.py","NoteDB.py", "note.db"]
+    "files": ["NoteDB.py","style.css","note.db","main.py","Menu.py"]
 }
